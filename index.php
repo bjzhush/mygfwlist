@@ -96,7 +96,7 @@ function delDomain($get)
     if ($writeRes === false) {
         exit('write list.json failed');
     } else {
-        exit('domain '.$domainNew.' deled');
+        exit('domain '.$domainNew.' deleted');
     }
     
 }
@@ -121,7 +121,7 @@ function generate()
     //put into
     foreach ($allDomains as $domain) {
         $rows[] = '|'.$domain;
-        echo $domain.'<br>';
+        echo $domain['d'].'<br>';
     }
     $rows[]  = '!-----zs custom rule start----';
     $all = implode(PHP_EOL, $rows);

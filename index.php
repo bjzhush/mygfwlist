@@ -120,7 +120,7 @@ function generate()
     }
     //put into
     foreach ($allDomains as $domain) {
-        $rows[] = '||'.$domain.PHP_EOL;
+        $rows[] = '||'.$domain['d'].PHP_EOL;
         echo $domain['d'].'<br>';
     }
     $rows[]  = '!-----zs custom rule start----';
